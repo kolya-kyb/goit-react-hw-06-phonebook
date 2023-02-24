@@ -3,7 +3,7 @@ import { deleteContact } from 'redux/contactsSlice';
 
 import { ListWrapper } from './ContactList.styled';
 const ContactList = () => {
-  const contacts = useSelector(state => state.contacts.value);
+  const contacts = useSelector(state => state.contacts.items);
   const filter = useSelector(state => state.filter);
   const dispatch = useDispatch();
 
