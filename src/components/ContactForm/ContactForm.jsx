@@ -11,7 +11,7 @@ const ContactForm = () => {
 
   const dispatch = useDispatch();
 
-  const contacts = useSelector(state => state.contacts.value);
+  const contacts = useSelector(state => state.contacts.items);
 
   const handleSubmit = e => {
     e.preventDefault();
